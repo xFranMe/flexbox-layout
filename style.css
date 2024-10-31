@@ -9,30 +9,45 @@
 body {
     min-height: 100vh;
     font-family: Roboto, monospace;
-    font-size: 19px;
+    font-size: 18px;
     display: flex;
     flex-flow: column nowrap;
 }
+
+/* Some shared rules... */
 
 .header, .info, .quote, .sign-up, .footer{
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-.header-bottom, .quote, .sign-up {
+.header-bottom, .quote, .sign-up { /* Some of the previous sections do not share this vertical padding, that's why it is established separately */
     padding-bottom: 80px;
     padding-top: 80px;
+}
+
+button {
+    background-color: #3882F6;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 8px 32px;
+    border-radius: 6px;
+    border-style: none;
+    color: #E5E7EB;
 }
 
 .color-1 {
     color: #F9FAF8;
 }
 
+.color-2 {
+    color: #E5E7EB
+}
+
 /* Header rules */
 
 .header {
     background-color: #1F2937;
-    color: #E5E7EB;
 }
 
 .header-top {
@@ -60,6 +75,7 @@ a {
 
 .header-bottom {
     display: flex;
+    gap: 28px;
 }
 
 .header-bottom > * {
@@ -82,20 +98,10 @@ a {
     align-items: center;
 }
 
-button {
-    background-color: #3882F6;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 8px 32px;
-    border-radius: 6px;
-    border-style: none;
-    color: #E5E7EB;
-}
-
 /* Main rules */
 
 .main {
-    flex-grow: 1;
+    flex-grow: 1; /* This would push the footer down (by making the main section grow) in case the viewport height is not filled with enough content */
 }
 
 /* Main: Info rules */
@@ -138,7 +144,7 @@ button {
 }
 
 .quote > * {
-    margin: 0 40px;
+    margin: 0 40px; /* To add extra space on both sides */
 }
 
 .quote-text {
@@ -159,7 +165,6 @@ button {
     background-color: #3882F6;
     border-radius: 8px;
     padding: 32px 64px;
-    color: #E5E7EB;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,6 +180,8 @@ button {
     border-color: #E5E7EB;
 }
 
+/* Footer rules */
+
 .footer {
     background-color: #1F2937;
     padding-top: 32px;
@@ -182,5 +189,4 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E5E7EB;
 }
