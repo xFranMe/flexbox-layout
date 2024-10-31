@@ -14,8 +14,14 @@ body {
     flex-flow: column nowrap;
 }
 
-body > * {
-    padding: 0 10vw;
+.header, .info, .quote, .sign-up, .footer{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.header-bottom, .quote, .sign-up {
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .color-1 {
@@ -56,10 +62,6 @@ a {
     display: flex;
 }
 
-.header-bottom {
-    padding: 80px 0;
-}
-
 .header-bottom > * {
     flex: 0 1 100%;
 }
@@ -95,6 +97,8 @@ button {
     flex-grow: 1;
 }
 
+/* Main: Info rules */
+
 .info-header {
     font-size: 36px;
     color: #1F2937;
@@ -107,6 +111,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 48px;
+    padding-bottom: 80px;
 }
 
 .item {
@@ -124,3 +129,27 @@ button {
     margin: auto;
     margin-bottom: 8px;
 }
+
+/* Main: Quote rules */
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote > * {
+    margin: 0 40px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.author-text {
+    text-align: end;
+    font-weight: 700;
+}
+
+/* Main: Sign up rules */
