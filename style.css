@@ -174,3 +174,13 @@ button {
     border-style: solid;
     border-color: #E5E7EB;
 }
+
+.footer {
+    background-color: #1F2937;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+}
