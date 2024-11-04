@@ -1,1 +1,1 @@
-This project will just contain the HTML and CSS resources enough to build up a very basic layout using the Flexbox layout model.
+This project will just contain the HTML and CSS resources enough to build up a very basic layout using the Flexbox layout model. Disclaimer: it is not meant to be responsive!
